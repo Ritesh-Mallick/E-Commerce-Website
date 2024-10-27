@@ -1,0 +1,14 @@
+<div class="container d-flex flex-column justify-content-center align-items-center p-5 m-5 border border-2 border-black rounded rounded-2">
+    <h1>SignUp Form</h1>
+    <div class="p-4">
+       <input type="email" class="form-control" placeholder="Enter emailId" [(ngModel)]="em">
+       <br>
+       <input type="password" class="form-control" placeholder="Enter Password" [(ngModel)]="pwd"><br>
+       <input type="password" class="form-control" placeholder="Confirm Password"><br>
+
+       <button class="btn btn-outline-success" (click)="signup()">SignUp</button>
+
+    </div>
+    <p>If You are already registered, click 
+        <a routerLink="login">Here</a></p>
+</div>

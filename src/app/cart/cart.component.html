@@ -1,0 +1,11 @@
+<h1 class="text-center">Cart</h1>
+<div id="products" class="d-flex flex-column gap-3 m-5 p-5">
+    <div class="product d-flex justify-content-between" *ngFor="let p of cart">
+        <img src="{{p.thumbnail}}" alt="p.title" height="50" width="50">
+        <h3>{{p.title}}</h3>
+        <p>Price:{{p.price | currency:"INR"}}</p>
+        <button>❌</button>
+    </div>
+    <p>Total: {{total | currency:"INR"}}</p>
+    <button class="btn btn-outline-primary">Checkout</button>
+</div>

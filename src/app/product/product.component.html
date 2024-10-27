@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row p-5 m-5">
+        <div class="col-12 col-lg-6">
+            <img src="{{product.thumbnail}}" alt="{{product.title}}" height="500" width="600">
+        </div>
+        <div class="col-12 col-lg-6">
+            <h3>{{product.title}}</h3>
+            <p>{{product.description}}</p>
+            <p>{{product.price | currency:"INR"}}</p>
+            <button (click)="addCart(product)">Add to cart</button>
+        </div>
+    </div>
+</div>
